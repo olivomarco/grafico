@@ -4,8 +4,8 @@ This repo contains an old retro-computing program I wrote back in 1997 for MS-DO
 
 It was written in Turbo Pascal 6, and you can find the [source code here](/src) with the main code being [this file](/src/grafico.pas). The original [compile.bat](/compile.bat) was the file used to compile it all, and required the `tcp.exe` file which is the Turbo Pascal 6 compiler for MS-DOS.
 
-I cannot provide it (I am not sure it is still under copyright), however I do not think anyone will try to compile this program anymore.
-To compile it maybe you can use Free Pascal:
+I cannot provide this executable (I am not sure if it is still under copyright by Borland International or others), however I do not think anyone will try to compile this program anymore.
+To compile it, maybe you can use Free Pascal:
 
 ```bash
 sudo apt-get install fp-compiler fp-ide
@@ -15,14 +15,14 @@ See also <http://fusharblog.com/installing-free-pascal-in-ubuntu/>
 
 However I haven't tried it myself (being Grafico more than 20 years old).
 
-Theoretically, it could be run under Linux with `dosbox`:
+Theoretically, this program could be run under Linux with `dosbox`:
 
 ```bash
 sudo apt-get install dosbox
 dosbox grafico.exe
 ```
 
-However, I personally didn't succeed: the program runs in graphical mode, and I received lots of gibberish on the screen. If you manage to make it run, please let me know how.
+However, I tried and didn't succeed: the program starts graphical mode, and therefore I received lots of gibberish in the terminal. If you manage to make it run, please let me know how.
 
 ## Original instructions (italian)
 
@@ -40,69 +40,69 @@ In breve, ecco le caratteristiche principali del programma in questione:
 
 Le funzioni matematiche base supportate sono numerose. Esempi:
 
-* abs(x)
-* ln(x)
-* sen(x)
-* cos(x)
-* tag(x)
-* cotag(x)
-* arcsen(x)
-* arccos(x)
-* arctag(x)
-* arccotag(x)
-* sqr(x)
-* sqrt(x)
-* x^3
-* e^x
-* (1/2)^x
-* (x-1)/(x+4)
-* asinh(x)
-* acosh(x)
-* atanh(x)
-* sinh(x)
-* cosh(x)
-* tanh(x)
-* sgn(x)
-* int(x)
+* `abs(x)`
+* `ln(x)`
+* `sen(x)`
+* `cos(x)`
+* `tag(x)`
+* `cotag(x)`
+* `arcsen(x)`
+* `arccos(x)`
+* `arctag(x)`
+* `arccotag(x)`
+* `sqr(x)`
+* `sqrt(x)`
+* `x^3`
+* `e^x`
+* `(1/2)^x`
+* `(x-1)/(x+4)`
+* `asinh(x)`
+* `acosh(x)`
+* `atanh(x)`
+* `sinh(x)`
+* `cosh(x)`
+* `tanh(x)`
+* `sgn(x)`
+* `int(x)`
 
 oltre a tutte le possibili combinazioni delle stesse, come ad esempio:
 
-* 4\*cos(x)+2\*cos(2\*x)-1
-* cos(x)/(sin(x)-1)
-* (x^3)\*(e^(-x))
-* (1-abs(e^(2\*x)-1))^(1/2)
-* arctag(1/abs(x))
-* x/(x^3-1)
-* 2\*x+log(x)
-* 2\*arctag(x)-x
-* (x^2+x)^(1/3)
-* x+(1-x^2)^(1/2)
-* 1/(1+x)+1/(1-abs(x))
-* x/(x^2+1)
-* abs(x^3-x^2)+x^3
-* ln(x/(x^2-4))
-* x+tag(x)
-* (x-2)*(e^x-1)
-* (1+x)/(abs(1-x))
-* (1+x)/(1-abs(x))
-* (1+abs(x))/(1-abs(x))
-* (x^2-4)/(x+1)
-* (x^3)/abs(x^2-1)
-* sqrt(4-x^2)
-* sqrt((1-abs(x))/(1+abs(x)))
-* sqrt((1-x)/(1+x))
-* 3\*((sen(x))^2)-3\*((sen(x))^3)
-* ((cos(x))^2)/(1+2\*sen(x))
-* (abs(x))^x
-* 2^(x+1/x)
-* (e^(tag(x))-1)/(e^(tag(x))+1)
-* sqrt(1-e^x)
-* arctag((e^x+1)/(e^x-1))
-* 25\*(x^3)\*(x-1)^2
+* `4*cos(x)+2*cos(2*x)-1`
+* `cos(x)/(sin(x)-1)`
+* `(x^3)*(e^(-x))`
+* `(1-abs(e^(2*x)-1))^(1/2)`
+* `arctag(1/abs(x))`
+* `x/(x^3-1)`
+* `2*x+log(x)`
+* `2*arctag(x)-x`
+* `(x^2+x)^(1/3)`
+* `x+(1-x^2)^(1/2)`
+* `1/(1+x)+1/(1-abs(x))`
+* `x/(x^2+1)`
+* `abs(x^3-x^2)+x^3`
+* `ln(x/(x^2-4))`
+* `x+tag(x)`
+* `(x-2)*(e^x-1)`
+* `(1+x)/(abs(1-x))`
+* `(1+x)/(1-abs(x))`
+* `(1+abs(x))/(1-abs(x))`
+* `(x^2-4)/(x+1)`
+* `(x^3)/abs(x^2-1)`
+* `sqrt(4-x^2)`
+* `sqrt((1-abs(x))/(1+abs(x)))`
+* `sqrt((1-x)/(1+x))`
+* `3*((sen(x))^2)-3*((sen(x))^3)`
+* `((cos(x))^2)/(1+2*sen(x))`
+* `(abs(x))^x`
+* `2^(x+1/x)`
+* `(e^(tag(x))-1)/(e^(tag(x))+1)`
+* `sqrt(1-e^x)`
+* `arctag((e^x+1)/(e^x-1))`
+* `25*(x^3)*(x-1)^2`
 
 ## Screenshot
 
-La figura qui sotto mostra una sovrapposizione di schermate del programma (quella in alto a sinistra è uno studio di funzione in verde con la derivata prima in viola e l'asse Y fuori dal dominio evidenziato in blu e quella in basso a destra è la rotazione di una curva attorno all'asse delle X):
+La figura qui sotto mostra una sovrapposizione di schermate del programma (quella in alto a sinistra è uno studio di funzione in verde con la derivata prima in viola e l'asse `Y` fuori dal dominio evidenziato in blu e quella in basso a destra è la rotazione di una curva attorno all'asse delle `X`):
 
 ![Screenshot del programma](/images/grafico.jpg)
 
